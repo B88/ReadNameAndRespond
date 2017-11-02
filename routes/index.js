@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-router.post('http://csweb01.csueastbay.edu/~np3742/GetMyNodeResults/getMyNodeResults.php', function(req, res, next) {
+router.post('/readNameAndRespond', function(req, res, next) {
     //expecting data variable called name --retrieve value using body-parser
     var value_name = req.body.name;  //retrieve the data associated with name
     res.send("hello " + value_name);
