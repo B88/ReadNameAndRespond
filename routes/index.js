@@ -18,8 +18,6 @@ router.get('/', function(req, res, next) {
 
 module.exports = router;
 
-
-
 router.post('/readNameAndRespond', function(req, res, next) {
     //expecting data variable called name --retrieve value using body-parser
     var value_name = req.body.name;  //retrieve the data associated with name
