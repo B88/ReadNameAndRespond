@@ -11,6 +11,6 @@ router.use(bodyParser.urlencoded({ extended: true })); // for parsing applicatio
 
 router.post('/getMyNodeResults', function(req, res) {
     //expecting data variable called name --retrieve value using body-parser
-    var value_name = req.body.name;  //retrieve the data associated with name
-    res.send("hello " + value_name);
+    //var value_name = req.body.name;  //retrieve the data associated with name
+    res.send("hello ");
 });
