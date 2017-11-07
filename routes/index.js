@@ -15,4 +15,10 @@ router.post('/getMyNodeResults', function(req, res, next) {
     res.send("hello " + value_name);
 });
 
+router.post('/', function (req, res, next) {
+    //expecting data variable called name --retrieve value using body-parser
+    var value_name = req.body.name;  //retrieve the data associated with name
+    res.send("you hit root directory");
+});
+
 module.exports = router;
