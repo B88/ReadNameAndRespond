@@ -11,14 +11,7 @@ router.use(bodyParser.json()); // for parsing application/json
 router.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencode
 //#########################################
 
-/* GET home page.
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-});*/
-
-module.exports = router;
-
-router.post('/readNameAndRespond', function(req, res, next) {
+router.post('https://read-name-and-respond-b.herokuapp.com/', function(req, res) {
     //expecting data variable called name --retrieve value using body-parser
     var value_name = req.body.name;  //retrieve the data associated with name
     res.send("hello " + value_name);
