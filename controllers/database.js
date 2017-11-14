@@ -1,5 +1,5 @@
 var mongodb = require('mongodb');
-var mongoDBURI = process.env.MONGODB_URI || 'mongodb://Bryce:lavalamp@ds064198.mlab.com:64198/proj2';
+var mongoDBURI = process.env.MONGODB_URI || 'mongodb://Bryce2:lavalamp@ds064198.mlab.com:64198/proj2';
 
 
 /** getAllRoutes controller logic that current does model logic too -connects to Mongo database and
